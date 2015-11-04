@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class MicroserviceApplication {
+public class App {
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroserviceApplication.class, args);
+        SpringApplication.run(App.class, args);
     }
 
     @RequestMapping(value = "/v1/list", method = RequestMethod.GET)
